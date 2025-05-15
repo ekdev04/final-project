@@ -1,15 +1,15 @@
 :root {
-    --dark: #20535d;
-    --midark: #515153;
-    --dim: #494848;
-    --color: #e5990c;
-    --mid: #c7b6d4;
-    --light: #C9C3C3;
-    --milight: #E5E1E1;
-    --white: #FAF3F3;
-    --std: all 250ms ease-in-out;
-    --long: all 500ms ease-in-out;
-  }
+  --dark: #6b5b52;
+  --midark: #7b6c4f;
+  --dim: #e5c8a4;
+  --color: #265c31;
+  --mid: #849c83;
+  --light: #f9e8d1;
+  --milight: #E5E1E1;
+  --white: #FAF3F3;
+  --std: all 250ms ease-in-out;
+  --long: all 500ms ease-in-out;
+}
   
   body {
     color: var(--mid);
@@ -20,7 +20,7 @@
   --  Nav Styles  --
   ------------------*/
   .topnav { 
-    background-color: var(--dark);
+    background-color: var(--dim);
     padding: 5rem 4rem 5rem 2rem;
     display: flex;
     align-items: center;
