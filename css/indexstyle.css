@@ -17,6 +17,10 @@
     background-color: var(--milight);
     margin: 0;
   } 
+
+  main {
+    padding: 3rem;
+  }
  
  /*------------------
   --  Nav Styles  --
@@ -66,10 +70,13 @@
     display: none; /*-- hides trigram (hamburger menu button) by default --*/
   }
 
-  .top {
+
+  #top {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
   }
   .share-and-save-text, .share-and-save-picture {
     flex: 1;
@@ -86,12 +93,11 @@
     transform: scale(1.05);
   }
 
-
-
-  .bottom {
+  #bottom {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .like-and-tag-text, .like-and-tag-picture {
     flex: 1;
@@ -106,4 +112,15 @@
   }
   .like-and-tag-picture img:hover {
     transform: scale(1.05);
+  }
+
+  #info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem 0rem 3rem;
+    text-align: center;
+  }
+  .like-and-tag-text, .share-and-save-text {
+    font-size: x-large;
   }
