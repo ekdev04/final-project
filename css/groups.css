@@ -1,5 +1,6 @@
 :root {
   --dark: #6b5b52;
+  --dark-transparent:rgba(107, 91, 82, 0.7);
   --midark: #7b6c4f;
   --dim: #e5c8a4;
   --color: #265c31;
@@ -65,57 +66,63 @@
     display: none; /*-- hides trigram (hamburger menu button) by default --*/
   }
 
+.main {
+  text-align: center;
+}
 
 
-.sidebar {
-    width: 200px; /* Adjust width as needed */
-    background-color: #f0f0f0; /* Example background color */
-    padding: 20px;
-    flex-shrink: 0; /* Prevent sidebar from shrinking */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
   }
   
-  .sidebar nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar nav ul li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar nav ul li a {
-    display: block; /* Make the entire link area clickable */
-    text-decoration: none; /* Remove underline */
-    color: #333; /* Example text color */
-    padding: 5px 10px; /* Add some padding */
-    border-radius: 5px;
-  }
-  
-  .sidebar nav ul li a:hover {
-    background-color: #ddd; /* Example hover style */
-  }
-
-  .figcaption {
-    position: absolute;
-    width: 100%;
+  .photo-item {
     text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%; /* or set a specific width */
+    max-width: 400px;
+  }
+  
+  .photo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .photo-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  .photo-item h3 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  .overlay-text {
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    color: var(--white);
-    text-shadow: -1px -1px 0px rgba(0,0,0,0.8),
-                 1px -1px 0px rgba(0,0,0,0.8),
-                 -1px 1px 0px rgba(0,0,0,0.8),
-                 1px 1px 0px rgba(0,0,0,0.8);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--dark-transparent);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
   }
-  .figcaption h1 {
-    font-size: 7.2rem;
-    font-weight: 400;
-    line-height: 1.1;
-    margin-bottom: 0;
-  }
-  .figcaption p {
-    font-size: 3.6rem;
-    font-weight: 700;
-    margin-top: 1.5rem;
-  }
+  
+  
