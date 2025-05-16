@@ -1,0 +1,87 @@
+:root {
+  --dark: #6b5b52;
+  --midark: #7b6c4f;
+  --dim: #e5c8a4;
+  --color: #265c31;
+  --mid: #5d6f5d;
+  --light: #f9e8d1;
+  --milight: #E5E1E1;
+  --white: #FAF3F3;
+  --std: all 250ms ease-in-out;
+  --long: all 500ms ease-in-out;
+}
+  
+  body {
+    color: var(--mid);
+    height: 100%;
+    background-color: var(--milight);
+    margin: 0;
+  } 
+
+  main {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /*------------------
+  --  Nav Styles  --
+  ------------------*/
+  .topnav { 
+    background-color: var(--dim);
+    padding: 1rem 4rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .site-footer {
+    background-color: var(--dim);
+    padding: 1em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a.logo {
+    margin-right: auto;
+    opacity: .85;
+  }
+  a.logo:hover {
+    opacity: 1;
+  }
+  a.logo > img {
+    width: 120px;
+    height: auto;
+  }
+  .topnav h1 {
+    text-align: center;
+  }
+  .topnav a {
+    text-decoration: none; 
+    color: var(--mid);
+    cursor: pointer;
+    transition: var(--std);
+  }
+  a:hover {
+    color: var(--light);
+    cursor: pointer; 
+  }
+  .nav-item.trigram {
+    display: none; /*-- hides trigram (hamburger menu button) by default --*/
+  }
+
+  figure img {
+    width: 500px;
+    height: auto;
+  }
+
+.home{
+  text-decoration: underline; 
+  color: var(--mid);
+  cursor: pointer;
+  transition: var(--std);
+}

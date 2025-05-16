@@ -1,0 +1,68 @@
+  .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .share-and-save-text, .share-and-save-picture {
+    flex: 1;
+    max-width: 500px;
+  }
+  .share-and-save-picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+  .share-and-save-picture img:hover {
+    transform: scale(1.05);
+  }
+
+
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .like-and-tag-text, .like-and-tag-picture {
+    flex: 1;
+    max-width: 500px;
+  }
+  .like-and-tag-picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+  .like-and-tag-picture img:hover {
+    transform: scale(1.05);
+  }
+
+
+
+
+    /*-- Styles for slideshow --*/
+    .hero {
+      position: relative; /*-- this allows children to be position absolutely --*/
+      padding: 0;
+      
+    }
+    .slideshow img {
+      width: 100%;  
+      height: auto; /* Take up the full height of the container */
+      object-fit: cover;  /* Ensures the image fills the container while maintaining its aspect ratio */
+    }
+    
+    .slide {
+      padding: 0;
+      margin: 0;
+    }
+    
+    .slide img {
+      box-shadow: 0 1px 8px rgba(0,0,0,.5);
+      max-width: 100;  /* Remove max-width to let the image fill the container */
+      max-height: 0%; /* Remove max-height to allow full height */
+      object-fit: cover;  /* Stretch the image to cover the full space */
+    }

@@ -3,7 +3,7 @@
   --midark: #7b6c4f;
   --dim: #e5c8a4;
   --color: #265c31;
-  --mid: #849c83;
+  --mid: #5d6f5d;
   --light: #f9e8d1;
   --milight: #E5E1E1;
   --white: #FAF3F3;
@@ -30,7 +30,7 @@
     font-weight: 500;
   }
   .site-footer {
-    background-color: var(--dark);
+    background-color: var(--dim);
     padding: 1em 4em;
     display: flex;
     align-items: center;
@@ -74,23 +74,15 @@
     padding: 0;
     
   }
-  .slideshow img {
-    width: 100%;  
-    height: auto; /* Take up the full height of the container */
-    object-fit: cover;  /* Ensures the image fills the container while maintaining its aspect ratio */
-  }
+
   
   .slide {
-    padding: 0;
+    padding: 1px 0rem;
     margin: 0;
+    background-color: var(--dim);
   }
   
-  .slide img {
-    box-shadow: 0 1px 8px rgba(0,0,0,.5);
-    max-width: 100;  /* Remove max-width to let the image fill the container */
-    max-height: 0%; /* Remove max-height to allow full height */
-    object-fit: cover;  /* Stretch the image to cover the full space */
-  }
+
   
   .figcaption {
     position: absolute;
@@ -164,36 +156,13 @@
     position: absolute;
     bottom: 3.2rem;
   }
-  .dot {
-    background-color: rgba(255,255,255,.6);
-    width: 1.4rem;
-    height: 1.4rem;
-    margin-left: 1.4rem;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: var(--std);
-  }
-  .dot:hover {
-    background-color: rgba(255,255,255,1);
-  }
-  .dot:first-child {
-    margin-left: 0;
-  } 
   main {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     margin: 2rem 2vw;
-  }
-  aside {
-    margin: 0 2vw;
-    color: var(--midark);
-  }
-  aside p {
-    column-count: 1;
-  }
-  
+  }  
   .card {
     background-color: var(--milight);
     border-radius: 10px;
@@ -245,41 +214,8 @@
     display: flex;
     justify-content: space-between;
   }
-  /* .actions > :last-child {
-    margin-left: auto;
-  } */
-  .stats, .tags {
-    margin: 0 1rem;
-  }
-  .stats {
-    color: var(--midark);
-  }
-  .stats > span:not(:first-of-type), .tags > span:not(:first-of-type) {
-    display: inline-block;
-    margin: auto .5em;
-  }
-  .likes {
-    color:rgb(53, 124, 53);
-  }
-  .rating {
-    padding: .2rem .4rem;
-    font-size: .8em;
-    border: 1px solid var(--midark);
-  }
-  .quality {
-    padding: .05rem 1rem .1rem 1rem;
-    font-size: .65em;
-    border: 1px solid var(--midark);
-    border-radius: 4px;
-  }
-  .tags {
-    font-size: .9em;
-  }
-  .tags > span:not(:last-of-type):after {
-    content: "\2022";
-    color: var(--mid);
-    padding-left: 2rem;
-  }
+
+
   /*---------------------
   --- Card Collapse --
   ----------------------*/
@@ -320,3 +256,12 @@
     main{grid-template-columns:repeat(4, 1fr);}
   }
   
+  .description {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dim);
+    padding: 4rem;
+    font-size: x-large;
+    margin: 0;
+    text-align: center;
+  }
