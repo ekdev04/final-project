@@ -189,3 +189,7 @@
     50%  { opacity: 0; }
     100% { opacity: 0; }
   }
+
+  h1 {
+    font-size: 50px;
+  }
